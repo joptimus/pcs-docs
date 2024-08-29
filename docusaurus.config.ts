@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/joptimus/pcs-docs/',
+            'https://github.com/joptimus/pcs-docs/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -66,7 +66,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/pcsBadge.png',
     navbar: {
-      title: 'PCS Training Documents',
+      title: 'PCS Employee Handbook',
       logo: {
         alt: 'My Site Logo',
         src: 'img/pcsBadge.png',
