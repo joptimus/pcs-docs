@@ -54,28 +54,28 @@ export default function Home(): JSX.Element {
               description="Fire, weather, emergency procedures, and safety protocols"
               icon="🛡️"
               color="danger"
-              href="/docs/personal-safety/"
+              href="/docs/category/personal-safety/"
             />
             <CategoryCard
               title="Environmental"
               description="Pollution control, sewage management, and compliance"
               icon="🌿"
               color="success"
-              href="/docs/environmental/"
+              href="/docs/category/environmental-compliance/"
             />
             <CategoryCard
               title="Services"
               description="Captain services, boat handling, and operational checklists"
               icon="⚓"
               color="primary"
-              href="/docs/services/"
+              href="/docs/category/our-services/"
             />
             <CategoryCard
               title="Uniforms & Gear"
               description="Required attire and equipment specifications"
               icon="👔"
               color="info"
-              href="/docs/uniforms/"
+              href="/docs/uniforms"
             />
             <CategoryCard
               title="Company"
