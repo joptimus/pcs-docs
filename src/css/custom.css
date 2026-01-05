@@ -60,3 +60,44 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Button Enhancements */
+.button {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all var(--ifm-transition-base);
+  box-shadow: var(--ifm-shadow-sm);
+}
+
+.button:hover {
+  box-shadow: var(--ifm-shadow-lg);
+  transform: translateY(-2px);
+}
+
+.button.button--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  border: none;
+}
+
+.button.button--primary:hover {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+}
+
+.button.button--secondary {
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: transparent;
+}
+
+.button.button--secondary:hover {
+  background: var(--ifm-color-primary-lightest);
+}
+
+/* Link Hover Effects */
+a {
+  transition: color var(--ifm-transition-fast);
+}
+
+a:hover {
+  text-decoration: underline;
+}
