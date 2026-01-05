@@ -279,3 +279,79 @@ a:hover {
 .markdown table tr:hover {
   background: var(--ifm-color-primary-lightest);
 }
+
+/* Generated Index Page Enhancements */
+.generatedIndexPage_vN6x {
+  margin-top: 2rem;
+}
+
+.generatedIndexPage_vN6x > header {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: var(--ifm-shadow-lg);
+}
+
+.generatedIndexPage_vN6x > header h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.generatedIndexPage_vN6x > header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Doc Card List Enhancements */
+.docCardListItem_W1sv {
+  margin-bottom: 1.5rem;
+}
+
+.docCardListItem_W1sv .cardContainer_fWXF {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--ifm-shadow-md);
+  background: var(--ifm-color-background-secondary);
+  transition: all var(--ifm-transition-base);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.docCardListItem_W1sv .cardContainer_fWXF:hover {
+  box-shadow: var(--ifm-shadow-lg);
+  transform: translateY(-6px);
+  border-color: var(--ifm-color-primary);
+}
+
+.docCardListItem_W1sv .cardTitle_rnsV {
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.docCardListItem_W1sv .cardDescription_PWke {
+  color: var(--ifm-color-content);
+  line-height: 1.6;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* Generated Index Category Title */
+.title_kItE {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.generatedIndexPage_vN6x > .margin-top--lg > article > header + article section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
