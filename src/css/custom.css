@@ -4,15 +4,49 @@
  * work well for content-centric websites.
  */
 
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #00A6AA; /* Primary color */
-  --ifm-color-primary-dark: #009295; /* Slightly darker shade */
-  --ifm-color-primary-darker: #008080; /* Darker shade */
-  --ifm-color-primary-darkest: #006666; /* Deepest shade */
-  --ifm-color-primary-light: #33B4B6; /* Slightly lighter shade */
-  --ifm-color-primary-lighter: #66C2C4; /* Lighter shade */
-  --ifm-color-primary-lightest: #99D1D2; /* Lightest shade */
+  /* Primary Teal Gradient */
+  --ifm-color-primary: #00A6AA;
+  --ifm-color-primary-dark: #009295;
+  --ifm-color-primary-darker: #008080;
+  --ifm-color-primary-darkest: #006666;
+  --ifm-color-primary-light: #33B4B6;
+  --ifm-color-primary-lighter: #66C2C4;
+  --ifm-color-primary-lightest: #99D1D2;
+
+  /* Semantic Colors */
+  --ifm-color-success: #10B981;
+  --ifm-color-warning: #F59E0B;
+  --ifm-color-danger: #EF4444;
+  --ifm-color-info: #3B82F6;
+
+  /* Enhanced Spacing */
+  --ifm-spacing-unit: 8px;
+
+  /* Shadows */
+  --ifm-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ifm-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --ifm-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --ifm-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --ifm-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --ifm-transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --ifm-transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Modern Typography */
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --ifm-font-family-monospace: 'Menlo', 'Monaco', 'Courier New', monospace;
+
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.6;
+
+  --ifm-heading-font-weight: 600;
+
   --ifm-code-font-size: 95%; /* Keeping the font size as defined */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Highlighted code line background */
 }
@@ -28,4 +62,296 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Button Enhancements */
+.button {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all var(--ifm-transition-base);
+  box-shadow: var(--ifm-shadow-sm);
+}
+
+.button:hover {
+  box-shadow: var(--ifm-shadow-lg);
+  transform: translateY(-2px);
+}
+
+.button.button--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  border: none;
+}
+
+.button.button--primary:hover {
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+}
+
+.button.button--secondary {
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: transparent;
+}
+
+.button.button--secondary:hover {
+  background: var(--ifm-color-primary-lightest);
+}
+
+/* Link Hover Effects */
+a {
+  transition: color var(--ifm-transition-fast);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Card Components */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--ifm-shadow-md);
+  background: var(--ifm-color-background-secondary);
+  transition: all var(--ifm-transition-base);
+  padding: 1.5rem;
+}
+
+.card:hover {
+  box-shadow: var(--ifm-shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* Callout/Alert Styles */
+.alert {
+  border-left: 4px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert--info {
+  border-left-color: var(--ifm-color-info);
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--ifm-color-info);
+}
+
+.alert--warning {
+  border-left-color: var(--ifm-color-warning);
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--ifm-color-warning);
+}
+
+.alert--danger {
+  border-left-color: var(--ifm-color-danger);
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--ifm-color-danger);
+}
+
+.alert--success {
+  border-left-color: var(--ifm-color-success);
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--ifm-color-success);
+}
+
+/* Documentation Page Enhancements */
+.markdown {
+  line-height: 1.8;
+}
+
+.markdown h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--ifm-color-primary-lighter);
+  padding-bottom: 0.5rem;
+}
+
+.markdown h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.markdown code {
+  background: var(--ifm-color-emphasis-100);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--ifm-color-danger);
+}
+
+.markdown pre {
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  box-shadow: var(--ifm-shadow-md);
+}
+
+.markdown ol,
+.markdown ul {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.markdown li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown blockquote {
+  background: var(--ifm-color-primary-lightest);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 4px;
+}
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--ifm-shadow-lg);
+  margin: 1rem 0;
+}
+
+/* Sidebar Enhancements */
+.sidebar {
+  background: var(--ifm-color-background-secondary);
+}
+
+.sidebar__item {
+  border-radius: 6px;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar__item--active {
+  background: linear-gradient(90deg, var(--ifm-color-primary-lighter), transparent);
+  border-left: 3px solid var(--ifm-color-primary);
+  padding-left: calc(var(--ifm-spacing-horizontal) - 3px);
+}
+
+/* Breadcrumb Enhancement */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  background: var(--ifm-color-background-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+.breadcrumbs__item::after {
+  content: '→';
+  margin-left: 0.5rem;
+}
+
+.breadcrumbs__item:last-child::after {
+  content: '';
+  margin-left: 0;
+}
+
+/* Table Styling */
+.markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--ifm-shadow-md);
+}
+
+.markdown table th {
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.markdown table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.markdown table tr:hover {
+  background: var(--ifm-color-primary-lightest);
+}
+
+/* Generated Index Page Enhancements */
+.generatedIndexPage_vN6x {
+  margin-top: 2rem;
+}
+
+.generatedIndexPage_vN6x > header {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: var(--ifm-shadow-lg);
+}
+
+.generatedIndexPage_vN6x > header h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.generatedIndexPage_vN6x > header p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Doc Card List Enhancements */
+.docCardListItem_W1sv {
+  margin-bottom: 1.5rem;
+}
+
+.docCardListItem_W1sv .cardContainer_fWXF {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--ifm-shadow-md);
+  background: var(--ifm-color-background-secondary);
+  transition: all var(--ifm-transition-base);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.docCardListItem_W1sv .cardContainer_fWXF:hover {
+  box-shadow: var(--ifm-shadow-lg);
+  transform: translateY(-6px);
+  border-color: var(--ifm-color-primary);
+}
+
+.docCardListItem_W1sv .cardTitle_rnsV {
+  color: var(--ifm-heading-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.docCardListItem_W1sv .cardDescription_PWke {
+  color: var(--ifm-color-content);
+  line-height: 1.6;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* Generated Index Category Title */
+.title_kItE {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.generatedIndexPage_vN6x > .margin-top--lg > article > header + article section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }

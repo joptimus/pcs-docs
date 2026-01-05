@@ -65,6 +65,16 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/pcsBadge.png',
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
     navbar: {
       title: 'PCS Employee Handbook',
       logo: {
@@ -129,7 +139,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright Â© ${new Date().getFullYear()} Pro Captain Staffing, LLC`,
+      copyright: `Copyright © ${new Date().getFullYear()} Pro Captain Staffing, LLC`,
     },
     prism: {
       theme: prismThemes.github,
