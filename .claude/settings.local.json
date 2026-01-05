@@ -4,7 +4,9 @@
       "Skill(superpowers:using-superpowers)",
       "Skill(superpowers:using-superpowers:*)",
       "Bash(npm audit:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Skill(superpowers:brainstorming)",
+      "Skill(superpowers:brainstorming:*)"
     ]
   }
 }
