@@ -27,13 +27,13 @@ export default function Home(): JSX.Element {
           <div className={styles.heroCtas}>
             <button
               className={styles.ctaPrimary}
-              onClick={() => history.push('/docs')}
+              onClick={() => history.push('/docs/intro')}
             >
               <span>📚</span> Get Started
             </button>
             <button
               className={styles.ctaSecondary}
-              onClick={() => history.push('/docs')}
+              onClick={() => history.push('/docs/intro')}
             >
               Browse Handbook
             </button>
@@ -54,28 +54,28 @@ export default function Home(): JSX.Element {
               description="Fire, weather, emergency procedures, and safety protocols"
               icon="🛡️"
               color="danger"
-              href="/docs/personal-safety"
+              href="/docs/personal-safety/"
             />
             <CategoryCard
               title="Environmental"
               description="Pollution control, sewage management, and compliance"
               icon="🌿"
               color="success"
-              href="/docs/environmental"
+              href="/docs/environmental/"
             />
             <CategoryCard
               title="Services"
               description="Captain services, boat handling, and operational checklists"
               icon="⚓"
               color="primary"
-              href="/docs/services"
+              href="/docs/services/"
             />
             <CategoryCard
               title="Uniforms & Gear"
               description="Required attire and equipment specifications"
               icon="👔"
               color="info"
-              href="/docs/uniforms"
+              href="/docs/uniforms/"
             />
             <CategoryCard
               title="Company"
