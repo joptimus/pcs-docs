@@ -2,46 +2,39 @@
 sidebar_position: 1
 ---
 
-# Training Home
+# Welcome to the PCS Employee Handbook
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to **Pro Captain Staffing's Employee Handbook**. This resource is designed to guide you through our company culture, operational procedures, safety protocols, and service offerings.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+As a new or existing member of the Pro Captain Staffing team, this handbook will help you:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- Understand our commitment to safety and operational excellence
+- Learn about your responsibilities as a Captain or crew member
+- Review company policies and procedures
+- Access important safety and environmental compliance information
+- Familiarize yourself with our service offerings
 
-### What you'll need
+## Our Mission
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+**Deliver a Safe and Enjoyable Experience on the Water**
 
-## Generate a new site
+At Pro Captain Staffing, safety is our top priority in every decision and aspect of our operations. We are committed to maintaining the highest standards of professionalism, customer service, and marine safety.
 
-Generate a new Docusaurus site using the **classic template**.
+## Quick Navigation
 
-The classic template will automatically be added to your project after you run the command:
+- **Company Information**: Learn about our mission, values, and team
+- **Safety Training**: Critical procedures for personal safety and emergency response
+- **Environmental Compliance**: Our commitment to environmental stewardship
+- **Services**: Details on our captain services and boat management offerings
+- **Uniforms & Gear**: Professional appearance and required equipment standards
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Questions or Concerns?
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+If you have questions about this handbook or need to report a safety concern, please contact:
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- **Phone**: 682-561-5927
+- **Email**: office@procaptainstaffing.com
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Thank you for being part of the Pro Captain Staffing team. Together, we maintain the highest standards of safety and customer satisfaction.

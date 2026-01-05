@@ -20,5 +20,5 @@ To ensure a safe and enjoyable day on the water, our employees must adhere to th
 - **Remove shoes before entering the salon area of the boat.**
 - **Monitor channels 16 and 13 while underway.**
 - **Contact proper authorities immediately for all incidents.**
-- **Report all incidents or discrepancies to Capt. Bob as soon as possible.**
+- **Report all incidents or discrepancies to management as soon as possible** (Phone: 682-561-5927 or Email: office@procaptainstaffing.com).
 

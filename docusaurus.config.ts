@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Pro Capatin Staffing',
+  title: 'Pro Captain Staffing',
   tagline: 'LET US PROVIDE A SAFE AND ENJOYABLE DAY ON THE WATER',
   favicon: 'img/favicon.ico',
 
@@ -49,7 +49,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/joptimus/pcs-docs/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -68,7 +68,7 @@ const config: Config = {
     navbar: {
       title: 'PCS Employee Handbook',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Pro Captain Staffing Logo',
         src: 'img/pcsBadge.png',
       },
       items: [
