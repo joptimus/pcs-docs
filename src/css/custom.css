@@ -101,3 +101,50 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Card Components */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--ifm-shadow-md);
+  background: var(--ifm-color-background-secondary);
+  transition: all var(--ifm-transition-base);
+  padding: 1.5rem;
+}
+
+.card:hover {
+  box-shadow: var(--ifm-shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* Callout/Alert Styles */
+.alert {
+  border-left: 4px solid;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert--info {
+  border-left-color: var(--ifm-color-info);
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--ifm-color-info);
+}
+
+.alert--warning {
+  border-left-color: var(--ifm-color-warning);
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--ifm-color-warning);
+}
+
+.alert--danger {
+  border-left-color: var(--ifm-color-danger);
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--ifm-color-danger);
+}
+
+.alert--success {
+  border-left-color: var(--ifm-color-success);
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--ifm-color-success);
+}
