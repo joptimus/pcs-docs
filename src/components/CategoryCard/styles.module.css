@@ -1,0 +1,111 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: var(--ifm-color-background-secondary);
+  border: 2px solid transparent;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, currentColor, transparent);
+  opacity: 0;
+  transition: opacity var(--ifm-transition-base);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card--primary {
+  color: var(--ifm-color-primary);
+}
+
+.card--success {
+  color: var(--ifm-color-success);
+}
+
+.card--warning {
+  color: var(--ifm-color-warning);
+}
+
+.card--danger {
+  color: var(--ifm-color-danger);
+}
+
+.card--info {
+  color: var(--ifm-color-info);
+}
+
+.iconWrapper {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background: rgba(0, 166, 170, 0.1);
+}
+
+.card--success .iconWrapper {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.card--warning .iconWrapper {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.card--danger .iconWrapper {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.card--info .iconWrapper {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.title {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.description {
+  flex: 1;
+  margin: 0;
+  color: var(--ifm-color-content);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.arrow {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all var(--ifm-transition-base);
+}
+
+.card:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}

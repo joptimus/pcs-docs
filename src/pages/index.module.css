@@ -1,23 +1,245 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  color: white;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.buttons {
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  margin: 0;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  margin: 1rem 0 0 0;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--ifm-transition-base);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ctaPrimary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.ctaPrimary:hover {
+  background: white;
+  color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ctaSecondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.ctaSecondary:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.heroIllustration {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 400px;
+}
+
+.illustrationPlaceholder {
+  font-size: 200px;
+  opacity: 0.3;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.categories {
+  padding: 4rem 2rem;
+  background: var(--ifm-color-background);
+}
+
+.categoriesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categoriesTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: var(--ifm-heading-color);
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.onboarding {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(0, 166, 170, 0.05) 0%, rgba(37, 194, 160, 0.05) 100%);
+}
+
+.onboardingContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.onboardingTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-heading-color);
+}
+
+.onboardingSubtitle {
+  text-align: center;
+  color: var(--ifm-color-content);
+  margin: 0 0 2rem 0;
+  font-size: 1.1rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--ifm-color-background-secondary);
+  border-radius: 12px;
+  border: 2px solid var(--ifm-color-emphasis-200);
+  transition: all var(--ifm-transition-base);
+}
+
+.step:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--ifm-shadow-lg);
+}
+
+.stepNumber {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.stepDesc {
+  margin: 0;
+  color: var(--ifm-color-content);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .heroCtas {
+    flex-direction: column;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .heroIllustration {
+    display: none;
+  }
+
+  .categoriesTitle,
+  .onboardingTitle {
+    font-size: 1.75rem;
+  }
+
+  .cardsGrid,
+  .stepsGrid {
+    grid-template-columns: 1fr;
+  }
 }
