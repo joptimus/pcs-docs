@@ -129,7 +129,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} Pro Captain Staffing, LLC`,
+      copyright: `Copyright &copy; ${new Date().getFullYear()} Pro Captain Staffing, LLC`,
     },
     prism: {
       theme: prismThemes.github,
